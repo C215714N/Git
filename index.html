@@ -14,15 +14,20 @@
 <body>
 	<!-- NavBar -->
 	<nav>
-		<a class="brand" href="#"></a>
+		<a class="brand" href="#">Git</a>
 		<button class="button">&equiv;</button>
-		<ul>
+		<ul class="menu">
 			<li><a class="icon-home" href="#" title="inicio"><span>Inicio</span></a></li>
 			<li><a class="icon-about" href="about.html" title="acerca"><span>Acerca</span></a></li>
 			<li><a class="icon-gallery" href="gallery.html" title="galeria"><span>Galeria</span></a></li>
 			<li><a class="icon-contact" href="#contact" title="contacto"><span>Contacto</span></a></li>
 		</ul>
-		<a class="back" href=""></a>
+		<form id="search" action="">
+			<label for="searchIn"></label>
+			<input id="searchIn" type="search" placeholder="Ingrese un Texto">
+			<button class="search">Buscar</button>
+		</form>
+		<a class="back" href=""> ^ </a>
 	</nav>
 	<!-- header -->
 	<header id="header">
@@ -93,7 +98,7 @@
 				minlength="10"
 				maxlength="200"
 				required></textarea>
-			<button class="button"></button>
+			<button class="button"> enviar </button>
 		</form>
 		<p>&copy; Todos los derechos reservados 
 			<a href="#">Cristian Racedo</a>
