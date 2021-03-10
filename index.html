@@ -15,17 +15,31 @@
 		<a class="brand" href="#"></a>
 		<button class="button">&equiv;</button>
 		<ul>
-			<li><a href="#" title="inicio">Inicio</a></li>
-			<li><a href="about.html" title="acerca">Acerca</a></li>
-			<li><a href="gallery.html" title="galeria">Galeria</a></li>
-			<li><a href="#contact" title="contacto">Contacto</a></li>
+			<li><a class="icon-home" href="#" title="inicio"><span>Inicio</span></a></li>
+			<li><a class="icon-about" href="about.html" title="acerca"><span>Acerca</span></a></li>
+			<li><a class="icon-gallery" href="gallery.html" title="galeria"><span>Galeria</span></a></li>
+			<li><a class="icon-contact" href="#contact" title="contacto"><span>Contacto</span></a></li>
 		</ul>
 		<a class="back" href=""></a>
 	</nav>
 	<!-- header#header>h1{Curso Git}+p{Desarrollo colaborativo} -->
 	<header id="header">
-		<h1>Curso Git</h1>
-		<p>Desarrollo Colaborativo</p>
+		<div class="header">
+			<h1>Curso Git</h1>
+			<p>Desarrollo Colaborativo</p>
+			<div class="slide">
+				<span class="active"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<ul class="slide">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
 	</header>
 	<!-- main>(header.header>h2{Caracteristicas principales})+p{lorem100} -->
 	<main>
@@ -46,6 +60,8 @@
 		</div>
 		<form id="contact" action="">
 			<h2>Contactanos</h2>
+			<!-- (label+input+.validate)*3+label+textarea+button -->
+			(label+input+.validate)*3+label+textarea+button.button
 		</form>
 		<p>&copy; Todos los derechos reservados 
 			<a href="#">Cristian Racedo</a>
