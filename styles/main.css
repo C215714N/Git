@@ -22,34 +22,74 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			flex-wrap: wrap;
 			background-color: #eee;
 		}
-		.menu{
+		nav .menu{
+			width:100%;
+			height:0;
+			overflow: hidden;
 			list-style: none;
 			margin: 0;
 			padding: 0;
 		}
 		.menu a{
 			display: block;
+			padding: .5rem;
 			color:#333;
 			text-decoration: none;
 		}	
 		.menu a:hover{
 			background-color: #3338;
 		}
+		.menu.active{
+			height:auto;
+		}
+		#search {
+			display:none;
+		}
+		nav .back{
+			position: fixed;
+			bottom: 1rem;
+			right: 1rem;
+			width: 2rem;
+			padding: 0;
+			line-height: 2rem;
+			text-align: center;
+			border-radius: 50%;
+			opacity: .6;
+			color: #eee;
+			background-color: #333;
+		}
+		nav .back:hover{
+			opacity: .8;
+		}
+	/*mainHeader*/
+	
+	/*contactForm*/
+		#contact{
+			display: flex;
+			flex-direction: column;
+		}
+		#contact input,
+		#contact textarea{
+			padding: .5rem 1rem;
+			border: 2px solid transparent
+			font-size: 1rem;
+		}
 
-/*mainHeader*/
-
-/*contactForm*/
-	#contact{
-		display: flex;
-		flex-direction: column;
+/*medium devices*/
+	@media screen and (min-width:768px){
+		nav .button{
+			display:none;
+		}
+		nav .menu{
+			display: flex;
+			width: auto;
+			height: auto;
+		}
+		#search{
+			display: block;
+		}
 	}
-	#contact input,
-	#contact textarea{
-		padding: .5rem 1rem;
-		border: 2px solid transparent
-		font-size: 1rem;
-	}
-
 /*Autor: Cristian Racedo*/
