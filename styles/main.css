@@ -18,7 +18,7 @@
 		color: #eee;
 		background-color: #333;
 	}
-	/*navegacion*/
+	/*navigationBar*/
 		nav{
 			display: flex;
 			justify-content: space-between;
@@ -66,17 +66,66 @@
 			opacity: .8;
 		}
 	/*mainHeader*/
-
+	/*mainFooter*/
+		#footer{
+			padding: 1rem;
+			background-color: #eee;
+		}
 	/*contactForm*/
 		#contact{
+			max-width: 540px;
 			display: flex;
 			flex-direction: column;
+			margin: auto;
 		}
 		#contact input,
 		#contact textarea{
+			border-radius: .2rem;
 			padding: .5rem 1rem;
-			border: 2px solid transparent
+			outline: none;
+			border: 2px solid transparent;
 			font-size: 1rem;
+		}
+		#contact textarea{
+			min-height: 7rem;
+			resize: none;
+		}
+		#contact .button{
+			margin: .2rem 0;
+			font-size: 1rem;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		#contact .validate{
+			display: none;
+			padding: 1rem;
+			color: #eee;
+			text-shadow: 
+				0 0 .2rem #333, 
+				-2px 2px 2px #333;
+		}
+		/*validacion*/
+		#contact :focus{
+			box-shadow: 0 0 .5rem #333;
+		}
+		#contact :focus + .validate{
+			display: block;
+			border: 2px solid;
+			border-radius: 0 0 .2rem .2rem;
+		}
+		#contact :focus:invalid{
+			border-color: limegreen;
+		}
+		#contact :focus:invalid + .validate{
+			border-color: limegreen;
+			background-color: limegreen;
+		}
+		#contact :focus:valid{
+			border-color: tomato;
+		}
+		#contact :focus:valid + .validate{
+			border-color: tomato;
+			background-color: tomato;
 		}
 /*medium devices*/
 	@media screen and (min-width:768px){
@@ -90,6 +139,11 @@
 		}
 		#search{
 			display: block;
-		}
 	}
+/*Large Devices*/	
+	@media screen and (min-width:992px){
+		#contact{
+			max-width: 720px;
+
+		}
 /*Autor: Cristian Racedo*/
