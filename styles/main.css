@@ -69,6 +69,7 @@
 
 	/*contactForm*/
 		#contact{
+			max-width: 540px;
 			display: flex;
 			flex-direction: column;
 		}
@@ -78,7 +79,6 @@
 			border: 2px solid transparent
 			font-size: 1rem;
 		}
-
 /*medium devices*/
 	@media screen and (min-width:768px){
 		nav .button{
@@ -91,6 +91,11 @@
 		}
 		#search{
 			display: block;
-		}
 	}
+/*Large Devices*/	
+	@media screen and (min-width:992px){
+		#contact{
+			max-width: 720px;
+
+		}
 /*Autor: Cristian Racedo*/
