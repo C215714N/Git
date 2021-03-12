@@ -98,7 +98,11 @@
 			opacity: .8;
 		}
 	/*mainHeader*/
-
+	/*section*/	
+	section{
+		background-color: #e1e1e1;
+		margin-bottom: 1rem;
+	}	
 	/*mainFooter*/
 		#footer{
 			padding: 1rem;
