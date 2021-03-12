@@ -98,6 +98,18 @@
 			opacity: .8;
 		}
 	/*mainHeader*/
+		#header{
+			padding: 20% 1rem;
+			text-align:center;
+			color: #eee;
+			text-shadow: 0 0 .2rem #666;
+			backgroun-color: #333;
+		}
+		#header h1,
+		#header p{
+			margin: 0;
+			font-size: calc(2vw + .8rem);
+		}
 	/*section*/	
 	section{
 		background-color: #e1e1e1;
