@@ -114,7 +114,21 @@
 	section{
 		background-color: #e1e1e1;
 		margin-bottom: 1rem;
-	}	
+	}		
+
+	.gallery{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: .5rem;
+	}
+	.gallery img{
+		display:block;
+		width: 100%;
+		min-height: 200px;
+		border: .5rem solid #eee;
+		border-radius: .5rem;
+		background-color: #666;
+	}
 	/*mainFooter*/
 		#footer{
 			padding: 1rem;
