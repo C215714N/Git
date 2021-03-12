@@ -26,6 +26,10 @@
 			flex-wrap: wrap;
 			background-color: #eee;
 		}
+		nav a, 
+		nav form{
+			padding: .5rem;
+		}
 		nav .menu{
 			width:100%;
 			height:0;
@@ -36,7 +40,6 @@
 		}
 		.menu a{
 			display: block;
-			padding: .5rem;
 			color:#333;
 			text-decoration: none;
 		}	
@@ -46,8 +49,20 @@
 		.menu.active{
 			height:auto;
 		}
+		label[for="searchIn"]{
+			display:none;
+		}
 		#search {
 			display:none;
+		}
+		#searchIn{
+			outline: none;
+			border: none;
+			border-bottom: .2rem solid #333;
+			background-color: transparent;
+		}
+		#searchIn:focus{
+			width: 20vw;
 		}
 		nav .back{
 			position: fixed;
@@ -139,9 +154,19 @@
 		}
 		#search{
 			display: block;
+		}
+		#search .button{
+			display: inline-block;
+		}
 	}
 /*Large Devices*/	
 	@media screen and (min-width:992px){
+		#search{
+			display: flex;
+		}		
+		#searchIn{
+			min-width:540px;
+		}
 		#contact{
 			max-width: 720px;
 
